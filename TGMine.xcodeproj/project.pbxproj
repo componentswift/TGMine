@@ -12,6 +12,8 @@
 		0651EAB422E826CF007C31FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0651EAB222E826CF007C31FD /* Main.storyboard */; };
 		0651EAB622E826D0007C31FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0651EAB522E826D0007C31FD /* Assets.xcassets */; };
 		0651EAB922E826D0007C31FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0651EAB722E826D0007C31FD /* LaunchScreen.storyboard */; };
+		06F71E5B22E82FD1008285EC /* Target_TGMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F71E5A22E82FD1008285EC /* Target_TGMine.swift */; };
+		06F71E5D22E82FE3008285EC /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F71E5C22E82FE3008285EC /* MineController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0651EAB522E826D0007C31FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0651EAB822E826D0007C31FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0651EABA22E826D0007C31FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F71E5A22E82FD1008285EC /* Target_TGMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_TGMine.swift; sourceTree = "<group>"; };
+		06F71E5C22E82FE3008285EC /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		0651EAAD22E826CF007C31FD /* TGMine */ = {
 			isa = PBXGroup;
 			children = (
+				06F71E5822E82FAF008285EC /* TGMine */,
 				0651EAAE22E826CF007C31FD /* AppDelegate.swift */,
 				0651EAB022E826CF007C31FD /* ViewController.swift */,
 				0651EAB222E826CF007C31FD /* Main.storyboard */,
@@ -62,6 +67,23 @@
 				0651EABA22E826D0007C31FD /* Info.plist */,
 			);
 			path = TGMine;
+			sourceTree = "<group>";
+		};
+		06F71E5822E82FAF008285EC /* TGMine */ = {
+			isa = PBXGroup;
+			children = (
+				06F71E5922E82FBA008285EC /* Targets */,
+				06F71E5C22E82FE3008285EC /* MineController.swift */,
+			);
+			path = TGMine;
+			sourceTree = "<group>";
+		};
+		06F71E5922E82FBA008285EC /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				06F71E5A22E82FD1008285EC /* Target_TGMine.swift */,
+			);
+			path = Targets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F71E5D22E82FE3008285EC /* MineController.swift in Sources */,
 				0651EAB122E826CF007C31FD /* ViewController.swift in Sources */,
+				06F71E5B22E82FD1008285EC /* Target_TGMine.swift in Sources */,
 				0651EAAF22E826CF007C31FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839RTY5C9C;
 				INFOPLIST_FILE = TGMine/Info.plist;
@@ -291,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangmengze.TGMine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 839RTY5C9C;
 				INFOPLIST_FILE = TGMine/Info.plist;
@@ -309,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangmengze.TGMine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
